@@ -57,35 +57,35 @@ SUPPORT_CENTERS = decode_centers()
 class Userbot(Client):
     def __init__(self):
         self.one = Client(
-            name="NandAss1",
+            name="HTAss1",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
             no_updates=True,
         )
         self.two = Client(
-            name="NandAss2",
+            name="HTAss2",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING2),
             no_updates=True,
         )
         self.three = Client(
-            name="NandAss3",
+            name="HTAss3",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING3),
             no_updates=True,
         )
         self.four = Client(
-            name="NandAss4",
+            name="HTAss4",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
             no_updates=True,
         )
         self.five = Client(
-            name="NandAss5",
+            name="HTAss5",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING5),
@@ -94,8 +94,8 @@ class Userbot(Client):
 
     async def get_bot_username_from_token(self, token):
         try:
-            temp_bot = Client(
-                name="temp_bot",
+            temp1999_bot = Client(
+                name="temp1999_bot",
                 api_id=config.API_ID,
                 api_hash=config.API_HASH,
                 bot_token=token,
@@ -120,7 +120,7 @@ class Userbot(Client):
         try:
             owner_mention = config.OWNER_ID
             
-            message = f"@{bot_username} Successfully Started ✅ 🇲🇲 Feel free to contact me if you need anything. Telegram ⚙ @HANTHAR999 🇲🇲\n\nOwner: {owner_mention}"
+            message = f"@{bot_username} Successfully Started ✅ 🇲🇲 Feel free to contact me if you need anything. Telegram ⚙ @Myanmar_Family7 🇲🇲\n\nOwner: {owner_mention}"
             
             if assistants:
                 if 1 in assistants:
