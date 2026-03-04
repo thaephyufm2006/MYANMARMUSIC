@@ -319,7 +319,7 @@ async def gen_thumb(videoid: str):
             info_x = random.randint(50, 100)
             max_text_w = art_x - info_x - 50
         
-        np_options = ["CRAFTED BY HANTHAR", "DESIGNED BY HANTHAR", "PRODUCED BY HANTHAR", "DEVELOPED BY HANTHAR"]
+        np_options = ["MADE BY HANTHAR", "DESIGNED BY HANTHAR", "NOW PLAYING", "PLAYING"]
         np_font = ImageFont.truetype(FONT_BOLD_PATH, random.randint(50, 70))
         np_text = random.choice(np_options)
         np_y = random.randint(120, 160)
