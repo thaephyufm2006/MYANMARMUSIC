@@ -101,9 +101,9 @@ class Userbot(Client):
                 bot_token=token,
                 no_updates=True,
             )
-            await temp_bot.start()
-            username = temp_bot.me.username
-            await temp_bot.stop()
+            await temp1999_bot.start()
+            username = temp1999_bot.me.username
+            await temp1999_bot.stop()
             return username
         except Exception as e:
             LOGGER(__name__).error(f"Error getting bot username: {e}")
