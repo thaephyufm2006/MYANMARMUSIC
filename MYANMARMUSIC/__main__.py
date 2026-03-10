@@ -34,10 +34,10 @@ from MYANMARMUSIC.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
 
 COMMANDS = [
-    BotCommand("start", " sᴛᴀʀᴛ ʙᴏᴛ •"),
-    BotCommand("help", " ʜᴇʟᴘ ᴍᴇɴᴜ •"),
-    BotCommand("ping", " ᴘɪɴɢ ʙᴏᴛ •"),
-    BotCommand("play", " ᴘʟᴀʏ ᴀᴜᴅɪᴏ ᴏɴ ᴠᴄ •"),
+    BotCommand("start", " 𝑺𝑻𝑨𝑹𝑻 𝑩𝑶𝑻 •"),
+    BotCommand("help", " 𝑯𝑬𝑳𝑷 𝑴𝑬𝑵𝑼 •"),
+    BotCommand("ping", " 𝑷𝑰𝑵𝑮 𝑩𝑶𝑻 •"),
+    BotCommand("lang", " 𝒍𝒂𝒏𝒈𝒖𝒂𝒈𝒆 𝑪𝒉𝒂𝒏𝒈𝒆 𝑩𝒐𝒕 •"),
 ]
 
 async def setup_bot_commands():
