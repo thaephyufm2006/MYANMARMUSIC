@@ -47,7 +47,7 @@ def welcomepic(pic, user, chat, id, uname):
     font2 = ImageFont.truetype('MYANMARMUSIC/assets/font.ttf', size=90)
     draw.text((65, 250), f'NAME : {unidecode(user)}', fill="white", font=font)
     draw.text((65, 340), f'ID : {id}', fill="white", font=font)
-    draw.text((65, 430), f"USERNAME : {uname}", fill="white", font=font)
+    draw.text((65, 430), f"Developed : @myanmarbot_music", fill="white", font=font)
     pfp_position = (767, 133)  
     background.paste(pfp, pfp_position, pfp)  
     background.save(f"downloads/welcome#{id}.png")
@@ -119,13 +119,13 @@ async def greet_group(_, member: ChatMemberUpdated):
         temp.MELCOW[f"welcome-{member.chat.id}"] = await app.send_photo(
             member.chat.id,
             photo=welcomeimg,
-            caption=f"""🌟 <b>ᴡᴇʟᴄᴏᴍᴇ {user.mention}!</b>
+            caption=f"""🎉 <b>ʜᴇʏ! {user.mention} ရောက်လာပြီဟေ့ 🎉</b>
 
-📋 <b>ɢʀᴏᴜᴘ:</b> {member.chat.title}
-🆔 <b>ʏᴏᴜʀ ɪᴅ:</b> <code>{user.id}</code>
-👤 <b>ᴜsᴇʀɴᴀᴍᴇ:</b> @{user.username if user.username else "ɴᴏᴛ sᴇᴛ"}
+💌 <b>ɢʀᴏᴜᴘ:</b> {member.chat.title}
+⛰ <b>ʏᴏᴜʀ ɪᴅ:</b> <code>{user.id}</code>
+👻 <b>ᴜsᴇʀɴᴀᴍᴇ:</b> @{user.username if user.username else "ɴᴏᴛ sᴇᴛ"}
 
-<b><u>ဒီနေရာလေးမှာ စိတ်လက်ပေါ့ပါးတဲ့ ခံစားချက်တွေ၊ သူငယ်ချင်းအသစ်တွေနဲ့ ပျော်ရွှင်စရာတွေ အများကြီး ရှာဖွေတွေ့ရှိပါစေလို မျှော်လင့်ပါတယ်!</u> 🌟</b>""",
+<b><u>ကဲ... သူငယ်ချင်းအသစ်လေး ရောက်လာပြီဆိုတော့ နွေးနွေးထွေးထွေး ကြိုဆိုပေးကြပါဦး ခင်ဗျာ! 🥳ဒီမှာ ပျော်ပျော်ပါးပါး စကားတွေပြောရင်း အမှတ်တရကောင်းတွေ အများကြီး ဖန်တီးလိုက်ရအောင် </u> 🌟</b>""",
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("🤍 ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🤍", url=f"https://t.me/{app.username}?startgroup=True")]
             ]),
