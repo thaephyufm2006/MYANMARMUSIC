@@ -119,12 +119,14 @@ async def greet_group(_, member: ChatMemberUpdated):
         temp.MELCOW[f"welcome-{member.chat.id}"] = await app.send_photo(
             member.chat.id,
             photo=welcomeimg,
-            caption=f"""🎉 <b>ʜᴇʏ! {user.mention} ရောက်လာပြီဟေ့ 🎉</b>
+            caption=f"""🇲🇲 <b>  𝐇𝐞𝐥𝐥𝐨, 𝐰𝐞𝐥𝐜𝐨𝐦𝐞 𝐟𝐚𝐦𝐢𝐥𝐲 𝐠𝐫𝐨𝐮𝐩.
+🇲🇲 𝐓𝐡𝐚𝐧𝐤 𝐚 𝐥𝐨𝐭, 𝐟𝐨𝐫 𝐣𝐨𝐢𝐧 𝐠𝐫𝐨𝐮𝐩!</b>
 
-💌 <b>ɢʀᴏᴜᴘ:</b> {member.chat.title}
-⛰ <b>ʏᴏᴜʀ ɪᴅ:</b> <code>{user.id}</code>
-👻 <b>ᴜsᴇʀɴᴀᴍᴇ:</b> @{user.username if user.username else "ɴᴏᴛ sᴇᴛ"}
-
+              🎸🥁🥁🥁🎸
+ 
+🍒 𝐍𝐀𝐌𝐄  : {user.mention}
+🍒 𝐃𝐀𝐓𝐄  : {datetime.now().strftime('%Y-%m-%d')}
+🍒 𝐃𝐚𝐲    : {datetime.now().strftime('%A')}
 <b><u>ကဲ... သူငယ်ချင်းအသစ်လေး ရောက်လာပြီဆိုတော့ နွေးနွေးထွေးထွေး ကြိုဆိုပေးကြပါဦး ခင်ဗျာ! 🥳ဒီမှာ ပျော်ပျော်ပါးပါး စကားတွေပြောရင်း အမှတ်တရကောင်းတွေ အများကြီး ဖန်တီးလိုက်ရအောင် </u> 🌟</b>""",
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("🤍 ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🤍", url=f"https://t.me/{app.username}?startgroup=True")]
