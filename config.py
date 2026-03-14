@@ -17,7 +17,7 @@ LOG_GROUP_ID = int(os.getenv("LOG_GROUP_ID", None))
 HEROKU_APP_NAME = os.getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = os.getenv("HEROKU_API_KEY")
 
-UPSTREAM_REPO = os.getenv("UPSTREAM_REPO", "https://github.com/khithlainhtet/MYANMARMUSIC")
+UPSTREAM_REPO = os.getenv("UPSTREAM_REPO", "https://github.com/thaephyufm2006/MYANMARMUSIC")
 UPSTREAM_BRANCH = os.getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = os.getenv("GIT_TOKEN", None)
 
