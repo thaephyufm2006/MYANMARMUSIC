@@ -125,17 +125,19 @@ async def greet_group(_, member: ChatMemberUpdated):
 
               🎸🥁🥁🥁🎸
  
-🍒 𝐍𝐀𝐌𝐄  : {user.mention}
-🍒 𝐃𝐀𝐓𝐄  : {datetime.now().strftime('%Y-%m-%d')}
-🍒 𝐃𝐚𝐲    : {datetime.now().strftime('%A')}
-<b><u>ကဲ... သူငယ်ချင်းအသစ်လေး ရောက်လာပြီဆိုတော့ နွေးနွေးထွေးထွေး ကြိုဆိုပေးကြပါဦး ခင်ဗျာ! 🥳ဒီမှာ ပျော်ပျော်ပါးပါး စကားတွေပြောရင်း အမှတ်တရကောင်းတွေ အများကြီး ဖန်တီးလိုက်ရအောင် </u> 🌟</b>""",
+🌴 𝐍𝐀𝐌𝐄  : {user.mention}
+🌸 𝐃𝐀𝐓𝐄  : {datetime.now().strftime('%Y-%m-%d')}
+🌹 𝐃𝐚𝐲    : {datetime.now().strftime('%A')}
+<b><u>အရာရာမှာပြည်စုံနေပေးမဲ့ အချစ်မှာတော့ ကံမကောင်းခဲ့တဲ့သူပါ </u>🥺</b>""",
                         reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("🤍 ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🤍", url=f"https://t.me/{app.username}?startgroup=True")],
-                [InlineKeyboardButton("မြန်မာ 𓆩♡𓆪 𝑋 𝑀𝑢𝑠𝑖𝑐", url="https://t.me/myanmarbot_music")],
-                [InlineKeyboardButton("အချစ်များ💞", url="https://t.me/myanmar_music_Bot2027")],
+                [
+                    InlineKeyboardButton("မြန်မာ 𓆩♡𓆪 𝑋 𝑀𝑢𝑠𝑖𝑐", url="https://t.me/myanmarbot_music"),
+                    InlineKeyboardButton("အချစ်များ💞", url="https://t.me/myanmar_music_Bot2027")
+                ],
                 [InlineKeyboardButton("Premium Shop", url="https://t.me/HANTHAR_1999")]
-            ]),
-        )
+                ]),
+              )
 
     except Exception as e:
         LOGGER.error(e)
